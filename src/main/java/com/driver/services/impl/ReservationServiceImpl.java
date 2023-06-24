@@ -67,7 +67,7 @@ public class ReservationServiceImpl implements ReservationService {
 
            User user = userOptional.get();
 
-           optimalSpot.setOccupied(false);
+           optimalSpot.setOccupied(true);
            reservation.setSpot(optimalSpot);
            reservation.setNumberOfHours(timeInHours);
            reservation.setUser(user);
